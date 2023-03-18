@@ -12,6 +12,9 @@ function App() {
   function HandleSubtraction() {
     setCount(count - 1);
   }
+  function HandleReset() {
+    setCount(0);
+  }
 
   return (
     <>
@@ -23,6 +26,10 @@ function App() {
         &nbsp;
         <button className="btn_red" onClick={HandleSubtraction}>
           Remove + 1
+        </button>
+        &nbsp;
+        <button className="btn_red" onClick={HandleReset}>
+         Reset
         </button>
         <h1>Note</h1>
       </div>
